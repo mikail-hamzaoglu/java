@@ -1,0 +1,96 @@
+package javadeneme;
+
+import java.util.Scanner;
+
+public class ders1 {
+
+	public static void main(String[] args) {
+	
+		while(true) {
+		
+			Scanner scann = new Scanner(System.in);
+			Scanner scan =new Scanner(System.in);
+			String s;
+			
+			
+			
+			System.out.println("HESAP MAKÝNASINA HOÞ GELDÝNÝZ");
+				
+			System.out.println("Hangi Ýþlemi yapmak istiyorsunuz:");
+			
+			System.out.println("TOPLAMA (1)");
+			System.out.println("ÇIKARMA (2)");
+			System.out.println("ÇARPMA (3)");
+			System.out.println("BÖLME (4)    NUMARA ÜZERÝNDEN SEÇÝNÝZ.");
+			System.out.println("ÇIKIÞ ÝÇÝN (5) TUÞUNA BASINIZ..");
+			System.out.println("çýkmak istiormusunuz E/h");
+		
+			s = scan.nextLine();
+			if(s.equals("e"))
+			{
+				break;
+			}
+			else if (s.equals("h"))
+			{
+				continue;
+			}
+			int girdi = scann.nextInt();
+		switch(girdi) {
+		case 1:
+			int sonuc;
+			
+			System.out.println("ilk 1sayýnýzý giriniz:");
+			int sayi1 = scan.nextInt();
+			System.out.println("ikinci sayýnýzý giriniz:");
+			int sayi2 = scan.nextInt();
+			
+			sonuc = sayi1+sayi2;
+			System.out.println("sayýlarnýzýn toplamý:"+sonuc);
+			break;
+		case 2:
+			
+            
+			
+			System.out.println("ilk sayýnýzý giriniz:");
+			 sayi1 = scan.nextInt();
+			System.out.println("ikinci sayýnýzý giriniz:");
+			 sayi2 = scan.nextInt();
+			
+			sonuc = sayi1-sayi2;
+			System.out.println("sayýlarnýzýn çýkarýlmasý:"+sonuc);
+			break;
+		case 3:
+			
+			System.out.println("ilk sayýnýzý giriniz:");
+			 sayi1 = scan.nextInt();
+			System.out.println("ikinci sayýnýzý giriniz:");
+			 sayi2 = scan.nextInt();
+			
+			sonuc = sayi1*sayi2;
+			System.out.println("sayýlarnýzýn çarpýmý:"+sonuc);
+			break;
+		case 4:
+ 
+			double sayi3,sayi4,sonuc1;
+			System.out.println("ilk sayýnýzý giriniz:");
+			sayi3 = scan.nextInt();
+			System.out.println("ikinci sayýnýzý giriniz:");
+			 sayi4 = scan.nextInt();
+			
+			 sonuc1 = sayi3/sayi4;
+			System.out.println("sayýlarnýzýn toplamý:"+sonuc1);
+			break;
+		
+			
+		
+		}
+		
+		
+	
+		
+		}
+		
+		
+	}
+
+}
